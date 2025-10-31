@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div style={{ padding: "20px", maxWidth: "400px", margin: "0 auto" }}>
-      <h2>XDictionary</h2>
+      <h2>Dictionary App</h2>
 
       {/* Input field */}
       <input
@@ -46,7 +46,10 @@ function App() {
       {definition && (
         <div style={{ marginTop: "20px" }}>
           {definition === "Word not found in the dictionary." ? (
-            <p>{definition}</p>
+             <>
+              <h3>Definition:</h3>
+              <p>{definition}</p>
+            </>
           ) : (
             <>
               <h3>Definition:</h3>
