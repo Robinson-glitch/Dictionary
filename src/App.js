@@ -41,20 +41,19 @@ function App() {
       <button onClick={handleSearch} style={{ padding: "8px 12px", marginLeft: "8px" }}>
         Search
       </button>
-
+     <h3>Definition:</h3>
       {/* Display definition */}
       {definition && (
         <div style={{ marginTop: "20px" }}>
           {definition === "Word not found in the dictionary." ? (
-             <>
-              <h3>Definition:</h3>
+             
               <p>{definition}</p>
-            </>
+          
           ) : (
-            <>
-              <h3>Definition:</h3>
+            
+              
               <p>{definition}</p>
-            </>
+          
           )}
         </div>
       )}
